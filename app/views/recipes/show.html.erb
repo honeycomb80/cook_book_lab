@@ -5,20 +5,5 @@
   <div class='spacer'></div>
 </ul>
 
-<div class="row">
-  <div class="col-md-5 col-sm-5">
-    <p class="lead"><%= @recipe.name %></p>
-    <p><%= @recipe.course %>
-    <p><%= @recipe.cooktime %>
-    <p><%= @recipe.servingsize %>
-    <p><%= @recipe.instructions %>
-  </div>
-
-  <!-- TODO: Display the ingredients in the show page -->
-  <!-- <div class="col-md-7 col-sm-7">
-    < @recipe.ingredients.each do |ingredient| %>
-      < ingredient.name %>
-      < image_tag(ingredient.image,  size: "40x40") %>
-    < end %> -->
-  </div>
- </div>
+<div><%= @recipe.name %> <%= @recipe.course %> <%= @recipe.cooktime %> <%= @recipe.servingsize %> <%= @recipe.instructions %>
+</div>
